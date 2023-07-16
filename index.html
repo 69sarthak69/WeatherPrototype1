@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Patua+One&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="weather-box">
+        <form action="" id="form">
+            <h1>Weather Forecast</h1>
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Enter city name">
+                <button id="search-button"><img src="images/magnifier.png" alt=""></button>
+            </div>
+            <div class="error" id="error">
+                <h3>INVALID CITY NAME!</h3>
+            </div>
+            <div class="card" id="card">
+                <div class="place">
+                    <h1 class="city" id="cname">Angus</h1>
+                    <p><span id="time" class="time"> </span></p>
+                    <img src="images/mist.png" alt="" id="icon">
+                    <p class="description" id="condition">cloudy</p>
+                </div>
+                <div class="info">
+                    <div>
+                        <img src="images/hot.png" alt="">
+                        <h3>Temperature:<p class="temp" id="temp">20°C</p>
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="images/wind.png" alt="">
+                        <h3>Wind:<p id="wind">0.75</p>
+                        </h3>
+                    </div>
+                    <div> <img src="images/humidity.png" alt="">
+                        <h3>Humidity:<p id="humid">72</p>
+                        </h3>
+                    </div>
+                    <div> <img src="images/pressure.png" alt="">
+                        <h3>Pressure:<p id="press">1000</p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="weather.js"> </script>
+    <div class="footer">
+        <h2>This website is created by Sarthak Shrestha.</h2>
+        <h3>07/15/2023</h3>
+        <div class="icons">
+            <a href="https://www.instagram.com/sarthak.stha.50/" target="_blank"> <i
+                    class="fa-brands fa-instagram"></i> </i></a>
+            <a href="https://www.tiktok.com/@_sarthak_69" target="_blank"><i
+                    class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>

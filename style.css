@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    color: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(110deg, #E4F2FF, #D0E8FF, #B6DDFF, #9DD2FF, #63BaFF);
+}
+
+.weather-box {
+    margin: 5em 25em;
+    padding: 40px 50px;
+    border: 8px solid transparent;
+    border-radius: 10px;
+    background: rgba(53, 53, 53, 0.47);
+    backdrop-filter: blur(62px);
+}
+
+.weather-box h1 {
+    text-align: center;
+    font-size: 48px;
+    padding: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 10px 100px;
+    border-radius: 20px;
+    font-size: 22px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: black;
+    text-align: center;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    background:#3f5e6d;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    height: 50px;
+    width: 50px;
+}
+.error{
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+.card{
+    text-align: center;
+}
+.card .place{
+    padding: 20px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+.time{
+    font-size: 20px;
+    line-height: 5px;
+}
+
+.info div img{
+    margin: 10px 20px;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card .info p{
+    font-size: 30px;
+}
+.footer{
+    background: rgba(11, 0, 0, 0.47);
+    backdrop-filter: blur(62px);
+    text-align: center;
+    padding: 30px;
+    line-height: 3em;
+    font-size: 15px;
+}
+.footer .icons a{
+    margin: 10px 20px;
+}
+@media only screen and (max-width: 700px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    .weather-box{
+        margin: 1em 1em;
+        padding: 10px 20px;
+    }
+    .weather-box h1{
+        font-size: 43px;
+    }
+    .search{
+        margin: 20px 20px;
+    }
+    input {
+        padding: 5px 15px;
+        margin: 5px;
+        border-radius: 40px;
+        font-size: 15px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        color: black;
+    
+    }
+    .search button {
+        border: 0;
+        outline: 0;
+        border-radius: 50%;
+        background: #3f5e6d;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .search button img {
+        height: 30px;
+        width: 30px;
+    }
+    .info div h3{
+        font-size: 15px;
+    }
+    .card .info p{
+        font-size: 20px;
+    }
+    .info div img{
+        height: 35px;
+        width: 35px;
+    }
+    .footer{
+        font-size: 8px;
+    }
+
+}
