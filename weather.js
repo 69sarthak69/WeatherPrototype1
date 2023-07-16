@@ -25,9 +25,9 @@ async function fetchh(namee){
             const windspeed = document.getElementById("wind");
             windspeed.innerHTML = data.wind.speed + " km/h";
             const humid = document.getElementById("humid");
-            humid.innerHTML = data.main.humidity;
+            humid.innerHTML = data.main.humidity + " %";
             const pressure = document.getElementById("press");
-            pressure.innerHTML = data.main.pressure;
+            pressure.innerHTML = data.main.pressure +" MB";
 
             if (data.weather[0].main == "Clouds") {
                 icon.src = "images/cloudy.png";
@@ -67,9 +67,9 @@ searchbutton.addEventListener("click", async function(e) {
         const windspeed = document.getElementById("wind");
         windspeed.innerHTML = data.wind.speed + " km/h";
         const humid = document.getElementById("humid");
-        humid.innerHTML = data.main.humidity;
+        humid.innerHTML = data.main.humidity + " %";
         const pressure = document.getElementById("press");
-        pressure.innerHTML = data.main.pressure;
+        pressure.innerHTML = data.main.pressure+ " MB";
 
         if (data.weather[0].main == "Clouds") {
             icon.src = "images/cloudy.png";
